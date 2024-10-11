@@ -1,0 +1,28 @@
+@media screen and (min-width: 1000px) {
+  .menu__logo, 
+  .menu__close-button,
+  .header__menu-button,
+  .menu__nav {
+    display: none; 
+  }
+
+ 
+
+
+}
+
+
+@media screen and (max-width: 420px) {
+  .menu__logo,
+  .menu__close-button {
+    display: block; 
+  }
+
+  .header__container .menu__list {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: block;
+  }
+}

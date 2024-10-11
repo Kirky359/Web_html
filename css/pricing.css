@@ -1,0 +1,198 @@
+
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&display=swap');
+
+/* Pricing Section */
+.pricing-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 7rem 4rem 0.28rem 4rem;
+}
+
+.pricing-plan {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-plan__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem; 
+}
+
+.pricing-plan__price {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+
+.pricing-plan__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.5rem; 
+}
+
+.pricing-plan__feature {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem; 
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-plan__feature::before {
+  content: '\2714'; 
+  color: #458479;
+  margin-right: 0.5rem;
+}
+
+.pricing-plan__feature--unavailable {
+  color: #d9534f;
+}
+
+.pricing-plan__feature--unavailable::before {
+  content: '\2718'; 
+  color: #d9534f;
+}
+
+.button--buy {
+  padding: 1.5rem 2rem;
+  background-color: #458479;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.button--buy:hover {
+  background-color: #3a6c67;
+}
+
+
+/* Main Section */
+.main--pricing {
+  padding: 0 2.26rem 2.26rem 2.26rem;
+  margin: 0 4rem 2.26rem 4rem;
+}
+
+/* Contact Form Section (Popup) */
+.contact-form-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  z-index: 1000;
+  display: none; 
+}
+
+.contact-form-section.show {
+  display: block; 
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+/* Contact Form Section (Popup) */
+.contact-form-section h2 {
+  font-size: 2.5rem; 
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .button--submit {
+  padding: 1.5rem;
+  background-color: #458479;
+  color: #f1f1f1; 
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size:2rem;
+}
+
+.contact-form .button--submit:hover {
+  background-color: #3a6c67;
+}
+
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: #333;
+}

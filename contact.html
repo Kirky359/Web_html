@@ -4,29 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhotoScape - Contact</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="photos/logo.png?v=2" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/querries.css" /> 
+    <link rel="icon" href="photos/logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  
+
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <img src="photos/logo.png" alt="PhotoScape logo" class="header__logo" />
-        <button id="menu-button" class="header__menu-button">☰</button>
-      </div>
-    </header>
-    <div class="menu">
-      <div class="menu__container">
-        <img src="photos/logo.png" alt="Logo" class="menu__logo" />
-        <button class="menu__close-button">&times;</button>
-      </div>
-      <nav class="menu__nav">
+        <div class="header__logo-container">
+          <img src="photos/logo.png" alt="PhotoScape logo" class="header__logo" />
+          <span class="header__logo-text">PhotoScape</span>
+        </div>
+    
+        <!-- Меню -->
         <ul class="menu__list">
           <li class="menu__item"><a href="index.html">Gallery</a></li>
           <li class="menu__item"><a href="pricing.html">Pricing</a></li>
           <li class="menu__item"><a href="contact.html">Contact us</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </header>
 
     <main class="main main--contact">
       <section class="contact-section">
@@ -36,22 +46,57 @@
           Call or email us using the information below!
         </p>
         <div class="contact-section__support">
-          <h3 class="support__title">Call your support team</h3>
-          <a href="#" class="support__phone">Tel: +380954269128</a>
-          <a href="#"  class="support__email">Email: support.photoscape@gmail.com</a>
-          <p href="#"  class="support__faq">
-            Find answers to your questions here: <a href="#" >questthephoto@gmail.com</a>
+          <h2 class="support__title">Call your support team</h2>
+          
+          <p class="support__info support__phone">
+            Tel: 
+            <span class="phone-number">
+              <a href="tel:+380954269128" class="contact-link"> +38095426912</a>
+            </span>
           </p>
+          
+          <p class="support__info support__email">
+            Email: 
+            <span class="email-address">
+              <a href="mailto:support.photoscape@gmail.com" class="contact-link">   support.photoscape@gmail.com</a>
+            </span>
+          </p>
+          
+          <p class="support__info support__faq">
+            Find answers to your questions here: 
+            <a href="mailto:questthephoto@gmail.com" class="contact-link">   questthephoto@gmail.com</a>
+          </p>
+
+          <p class="support__info"> Working hours:
+            "Our team is available Monday through Friday, 9:00 AM - 6:00 PM (GMT+2)."
+          </p>
+            
+          <p class="additional__info-1"> We believe in providing fast, reliable, and friendly support to help you get the most out of your photography.
+
+          </p>
+              
         </div>
-        <address class="contact-section__address">
-          <p>PhotoScape</p>
-          <p>01001 New York</p>
-          <p>Park line 23</p>
-          <p>New York, NYC</p>
-        </address>
       </section>
     </main>
-
+    
+  
+   
+    <footer class="footer">
+      <div class="footer__social-links">
+        <a href="#" class="footer__link">
+          <ion-icon class="footer__icon" name="logo-pinterest"></ion-icon>
+        </a>
+        <a href="#" class="footer__link">
+          <ion-icon class="footer__icon" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="footer__link">
+          <ion-icon class="footer__icon" name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+      <p>© 2024 by Photoscape Photography.</p>
+      <address>01001 New York, Park line 23, New York, NYC</address>
+    </footer>
+    
     <script src="script.js"></script>
   </body>
 </html>

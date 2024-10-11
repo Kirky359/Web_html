@@ -1,0 +1,79 @@
+
+.main--contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff; 
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contact-section__support {
+  background-color: #224458;
+  padding: 6rem; 
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  color: #fff; 
+  position: relative;
+  max-width: 1000px; 
+  height: 35rem;
+  margin: 0 auto; 
+  margin-bottom: 5.23rem;
+  padding-top: 3rem; 
+}
+
+.contact-section__support::before {
+  content: '';
+  position: absolute;
+  width: 8rem; 
+  height: 6rem;
+  bottom: 1.5rem; 
+  right: 1rem;
+  background: url('/photos/contact/flower.png') no-repeat center center;
+  background-size: contain;
+}
+
+
+.contact-section__title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section__description {
+  font-size: 1.5rem;
+  color: #27414c;
+  margin-bottom: 2rem;
+}
+
+
+.support__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5rem; 
+  margin-top: 0; 
+}
+
+.support__info {
+  font-size: 1.25rem;
+  color: #fff; /* Текст внутри блока поддержки остается белым */
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: #939393;
+}
+
+.additional__info-1{
+  font-size: 1.25rem;
+  color: #dedede; 
+  margin-bottom: 1rem;
+  margin-top:5rem;
+  text-align: left;
+}

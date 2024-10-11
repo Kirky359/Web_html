@@ -4,29 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhotoScape - Pricing</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/pricing.css" />
+    <link rel="stylesheet" href="/css/querries.css" /> 
+   
     <link rel="icon" href="photos/logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  
+
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <img src="photos/logo.png" alt="PhotoScape logo" class="header__logo" />
-        <button id="menu-button" class="header__menu-button">☰</button>
-      </div>
-    </header>
-    <div class="menu">
-      <div class="menu__container">
-        <img src="photos/logo.png" alt="Logo" class="menu__logo" />
-        <button class="menu__close-button">&times;</button>
-      </div>
-      <nav class="menu__nav">
+        <div class="header__logo-container">
+          <img src="photos/logo.png" alt="PhotoScape logo" class="header__logo" />
+          <span class="header__logo-text">PhotoScape</span>
+        </div>
+    
         <ul class="menu__list">
           <li class="menu__item"><a href="index.html">Gallery</a></li>
           <li class="menu__item"><a href="pricing.html">Pricing</a></li>
           <li class="menu__item"><a href="contact.html">Contact us</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </header>
 
     <main class="main main--pricing">
       <section class="pricing-section">
@@ -39,12 +50,13 @@
             <li
               class="pricing-plan__feature pricing-plan__feature--unavailable"
             >
-              Designed digital album (not included)
+              Designed digital album
             </li>
           </ul>
-          <button class="button button--buy" onclick="selectPackage('basic')">
-            Buy Basic Pack
+          <button class="button button--buy" data-package="premium">
+            Buy Premium Pack
           </button>
+          
         </div>
 
         <div class="pricing-plan pricing-plan--premium">
@@ -54,10 +66,12 @@
             <li class="pricing-plan__feature">5GB photo storage</li>
             <li class="pricing-plan__feature">+80 styled photos</li>
             <li class="pricing-plan__feature">Designed digital album</li>
+            <li class="pricing-plan__feature">Better photo quality</li>
           </ul>
-          <button class="button button--buy" onclick="selectPackage('premium')">
+          <button class="button button--buy" data-package="premium">
             Buy Premium Pack
           </button>
+          
         </div>
 
         <div class="pricing-plan pricing-plan--platinum">
@@ -70,41 +84,59 @@
             <li class="pricing-plan__feature">Priority Delivery</li>
             <li class="pricing-plan__feature">Social Media-Optimized Files</li>
           </ul>
-          <button
-            class="button button--buy"
-            onclick="selectPackage('platinum')"
-          >
+          <button class="button button--buy" data-package="platinum">
             Buy Platinum Pack
           </button>
         </div>
       </section>
 
       <section class="contact-form-section">
-        <h2>Buy</h2>
+        <span class="close-btn">&times;</span> 
+        <h2>Buy Package</h2>
         <form class="contact-form">
           <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" required />
-
+          <input type="text" id="first-name" name="first-name" placeholder="Your first name" required />
+      
           <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name" required />
-
+          <input type="text" id="last-name" name="last-name" placeholder="Your last name" required />
+      
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+      
           <label for="package">Selected Package:</label>
           <select id="package" name="package">
             <option value="basic">Basic</option>
             <option value="premium">Premium</option>
             <option value="platinum">Platinum</option>
           </select>
-
+      
           <button type="submit" class="button button--submit">Submit</button>
         </form>
       </section>
+      <div class="overlay"></div>
+      
+      
+      <div class="overlay"></div>
+      
     </main>
 
-    <script></script>
-
-    <script src="script.js"></script>
+    <footer class="footer">
+      <div class="footer__social-links">
+        <a href="#" class="footer__link">
+          <ion-icon class="footer__icon" name="logo-pinterest"></ion-icon>
+        </a>
+        <a href="#" class="footer__link">
+          <ion-icon class="footer__icon" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="footer__link">
+          <ion-icon class="footer__icon" name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+      <p>© 2024 by Photoscape Photography.</p>
+      <address>01001 New York, Park line 23, New York, NYC</address>
+    </footer>
+    
+    
+    <script src="/js/pricing.js"></script>
   </body>
 </html>

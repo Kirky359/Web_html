@@ -1,0 +1,265 @@
+/* Main Section */
+.main__intro {
+  text-align: center;
+  padding: 2rem 1.25rem;
+  background-color: #fff;
+}
+
+.main__title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+
+.main__subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 3.4rem;
+  margin-top: 1.2rem;
+}
+
+.get-started {
+  padding: 1.3rem 10rem;
+  background-color: #cfe8e0;
+  color: #333;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 1rem;
+  letter-spacing: 0.15rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #b0d5c3;
+  }
+}
+
+/* Gallery Section */
+
+.gallery-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin: 5rem 2rem  2rem 2rem;
+}
+
+.gallery-image {
+  width: 60%;
+  height: 38rem;
+  margin: 0.5rem 2.5rem 2.7rem 2.7rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+
+  }
+}
+
+
+.recent-gallery__photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 18.75rem);
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.photo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+
+  &:hover {
+    transform: translateY(-10px);
+
+  }
+}
+
+.photo-item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+
+  }
+}
+
+/* Testimonials */
+
+.icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+.comments-section__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.comments-section {
+  margin: 2.5rem auto;
+  max-width: 80rem;
+  padding: 1.25rem;
+  overflow: visible;
+}
+
+.comments {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.comment {
+  flex: 1 1 22%;
+  width: 20rem;
+  height: 18rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.875rem;
+  background-color: #f9f9f9;
+}
+
+.author__img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.875rem;
+}
+
+.author__name {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.875rem;
+}
+
+.time {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 0.875rem;
+}
+
+
+
+.recent-gallery__title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Recent Gallery Section */
+
+.main__recent-gallery {
+  text-align: center;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem;
+}
+
+.recent-gallery__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.recent-gallery__filters {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.label__name{
+  font-size:2rem;
+  color:#333;
+}
+
+
+
+.filter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+
+
+.filter__select {
+  width: 16rem;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+
+  border-radius: 0.75rem;
+  border: 1px solid #d1c6cd;
+  background-color: #f1eef0;
+  color: #333;
+  transition: border-color 0.3s ease;
+  margin-top: 0.5rem;
+
+
+  &:hover, &:focus {
+    border-color: #b0a9af;
+    outline: none;
+  }
+}
+
+
+
+.recent-gallery__title ion-icon {
+  cursor: pointer;
+  background-color: #f1eef0;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  font-size: 2.75rem;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #d1c6cd;
+  }
+}
+
+
+.recent-gallery__photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-item__image {
+  width: 85%;
+  height: 16rem;
+
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
+}
