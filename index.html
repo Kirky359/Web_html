@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>PhotoScape - Home</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/querries.css" />
+    <link rel="stylesheet" href="/css/querries.css.map" />
     <link rel="icon" href="photos/logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
     <script
@@ -38,16 +40,19 @@
     
     <div class="menu">  
       <div class="menu__container">
-        <img src="photos/logo.png" alt="Logo" class="menu__logo" />
+        <ion-icon name="menu-outline" class="menu-icon menu-icon--open" onclick="openMenu()"></ion-icon>
+        <ion-icon name="close-outline" class="menu-icon menu-icon--close" onclick="closeMenu()"></ion-icon>
       </div>
       <nav class="menu__nav">
-        <ul class="menu__list">
+        <ul class="menu__list popup">
           <li class="menu__item"><a href="index.html">Gallery</a></li>
           <li class="menu__item"><a href="pricing.html">Pricing</a></li>
           <li class="menu__item"><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
     </div>
+    
+    
     
     
       
@@ -405,5 +410,6 @@
     </footer>
     
     <script src="js/gallery.js"></script>
+    <script src="/js/popup.js"></script>
   </body>
 </html>

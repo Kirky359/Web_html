@@ -1,15 +1,16 @@
 
 .main--contact {
-  padding: 4rem 2rem;
+  padding: 3rem 3rem;
   text-align: center;
   background-color: #fff; 
+  margin-top:7.525rem;
   margin-bottom: 1rem;
   position: relative;
 }
 
 .contact-section__support {
   background-color: #224458;
-  padding: 6rem; 
+  padding: 7rem; 
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   color: #fff; 
@@ -34,7 +35,7 @@
 
 
 .contact-section__title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }

@@ -1,28 +1,248 @@
-@media screen and (min-width: 1000px) {
-  .menu__logo, 
-  .menu__close-button,
-  .header__menu-button,
-  .menu__nav {
-    display: none; 
+@charset "UTF-8";
+@import 'css/contact.css';
+@import 'css/general.css';
+@import 'css/index.css';
+@import 'css/pricing.css';
+
+
+
+/* Стили для иконок открытия и закрытия меню */
+.menu-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1001;
+  display: none; /* Изначально скрываем */
+  margin: 2.4rem 1.5rem 0rem 3rem;
+  color: #555;
+}
+
+/* По умолчанию скрываем popup меню */
+.popup {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+ 
+  .comments {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 
- 
+  .comment {
+    width: 100%;
+  }
 
+  .gallery-image {
+    width: 80%; /* Уменьшаем ширину всех изображений */
+    object-fit: cover; /* Пропорционально масштабируем изображения, обрезая края */
+    margin: 0.5rem; /* Добавляем отступы вокруг каждого изображения */
+    border-radius: 0.5rem; /* Края для визуальной гармонии */
+  }
 
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.25rem;
+    margin: 3rem;
+  }
 }
 
 
-@media screen and (max-width: 420px) {
-  .menu__logo,
-  .menu__close-button {
-    display: block; 
+
+/* Для экранов меньше 800px */
+@media (max-width: 900px) {
+  .get-started {
+    padding: 1rem 5rem;
+    font-size: 1.8rem;
   }
 
-  .header__container .menu__list {
+  .gallery-image {
+    width: 40%;
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .menu-icon--open {
+    display: block;
+  }
+
+  .menu__list {
     display: none;
   }
 
-  .header__menu-button {
+  .menu--active .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    transition: all 0.3s;
+  }
+
+  .menu-icon {
+    font-size: 3rem;
+    margin: 2.5rem;
+  }
+
+  .menu-icon--close {
+    display: none;
+  }
+
+  .menu--active .menu-icon--close {
     display: block;
+  }
+
+  .menu--active .menu-icon--open {
+    display: none;
+  }
+
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 2rem;
+  }
+
+  .gallery-image {
+    width: 100%;
+       height: auto;
+  }
+
+  /* Комментарии - грид на 2 колонки */
+
+
+  /* Уменьшаем select и label */
+  .label__name {
+    font-size: 1.6rem;
+  }
+
+  .filter__select {
+    width: 12rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* Делаем recent-gallery__photos гридом в одну колонку */
+  .recent-gallery__photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Увеличиваем размер изображений в recent gallery для лучшего отображения */
+  .photo-item__image {
+    width: 98%;
+    height: 18rem;
+  }
+
+  /* Изменяем настройки кнопки и текста */
+  .get-started {
+    padding: 0.8rem 3rem;
+    font-size: 1.5rem;
+  }
+
+
+  /* PRICING */
+
+  .pricing-section {
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру для визуальной гармонии */
+  }
+
+  .pricing-plan {
+    width: 100%; /* Увеличение ширины элементов до 100% */
+    max-width: 35rem; /* Ограничение максимальной ширины */
+    margin-bottom: 2rem; /* Добавление отступа между карточками */
+  }
+}
+
+
+/* Для экранов меньше 490px */
+@media (max-width: 490px) {
+  html {
+    font-size: 10px; /* Уменьшаем базовый размер шрифта (по умолчанию 1rem = 16px) */
+  }
+  
+  .header__container {
+    padding: 0 1rem; /* Добавим немного отступов по бокам */
+  }
+
+  .header__logo {
+    width: 2rem; /* Уменьшаем ширину логотипа */
+    height: auto; /* Высота автоматически подстраивается */
+  }
+
+  .menu-icon {
+    width:1.8rem;
+    top:1.2rem;
+  }
+
+  /* Скрываем обычный массив меню для экранов меньше 490px */
+  header .menu__list {
+    display: none;
+  }
+  
+
+  .menu--active .popup {
+    font-size: 1.8rem;
+  }
+
+  .menu--active .popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    transition: all 0.3s ease-in;
+  }
+
+  /* Изменение размера логотипа */
+  .header__logo {
+    width: 2rem;
+    height: auto;
+  }
+
+  .header__logo-text {
+    font-size: 2rem;
+  }
+
+  /* Скрываем обычный массив меню для экранов меньше 490px */
+  header .menu__list {
+    display: none;
+  }
+
+  .menu-icon {
+    font-size: 2.7rem;
+    margin: 2.16rem;
+  }
+
+  /* PRICING */
+
+  .pricing-section {
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру для визуальной гармонии */
+  }
+
+  .pricing-plan {
+    width: 100%; /* Увеличение ширины элементов до 100% */
+    max-width: 25rem; /* Ограничение максимальной ширины */
+    margin-bottom: 2rem; /* Добавление отступа между карточками */
   }
 }

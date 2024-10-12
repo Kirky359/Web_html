@@ -1,0 +1,166 @@
+@import './css/contact.css';
+@import './css/general.css';
+@import './css/index.css';
+@import './css/pricing.css';
+
+/* Стили для иконок открытия и закрытия меню */
+.menu-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1001;
+  display: none; /* Изначально скрываем */
+  margin:2.4rem 1.5rem 0rem 3rem;
+  color:#555;
+}
+
+/* По умолчанию скрываем popup меню */
+.popup {
+  display: none;
+}
+
+/* Для экранов меньше 420px показываем popup меню при активном состоянии */
+@media (max-width: 420px) {
+  .menu--active .popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    transition: all 0.3s ease-in;
+  }
+}
+
+/* Скрываем обычный массив меню для экранов меньше 420px */
+@media (max-width: 420px) {
+  header .menu__list {
+    display: none;
+  }
+}
+
+
+
+
+/* Иконка меню при разрешении меньше 740px */
+@media (max-width: 740px) {
+  .menu-icon--open {
+    display: block;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .menu--active .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    transition: all 0.3s;
+  }
+
+  /* Показываем иконку закрытия меню */
+  .menu-icon--close {
+    display: none;
+  }
+
+  /* Когда меню открыто, показываем иконку закрытия */
+  .menu--active .menu-icon--close {
+    display: block;
+  }
+
+  /* Когда меню открыто, скрываем иконку открытия */
+  .menu--active .menu-icon--open {
+    display: none;
+  }
+}
+
+@mixin grid-columns($columns) {
+  grid-template-columns: repeat($columns, 1fr);
+}
+// Функція для обчислення розміру шрифту
+@function calculate-font-size($base-size, $scale) {
+  @return $base-size * $scale;
+}
+
+// Функція для обчислення відступів
+@function calculate-margin-padding($base-size, $multiplier) {
+  @return $base-size * $multiplier;
+}
+
+// Міксин для адаптивних шрифтів
+@mixin responsive-font-size($base-size, $scale-small, $scale-large) {
+  font-size: calculate-font-size($base-size, $scale-large);
+
+  @media (max-width: 740px) {
+    font-size: calculate-font-size($base-size, $scale-small);
+  }
+
+  @media (max-width: 420px) {
+    font-size: calculate-font-size($base-size, $scale-small * 0.9);
+  }
+}
+
+// Міксин для адаптивних відступів
+@mixin responsive-margin-padding($property, $base-size, $multiplier-small, $multiplier-large) {
+  #{$property}: calculate-margin-padding($base-size, $multiplier-large);
+
+  @media (max-width: 740px) {
+    #{$property}: calculate-margin-padding($base-size, $multiplier-small);
+  }
+
+  @media (max-width: 420px) {
+    #{$property}: calculate-margin-padding($base-size, $multiplier-small * 0.9);
+  }
+}
+
+/* Приклад використання */
+
+// Іконка меню
+.menu-icon {
+  color: #555;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1001;
+
+  @include responsive-font-size(1rem, 3, 2.4);
+  @include responsive-margin-padding(margin, 1rem, 2.4, 1.5);
+}
+
+// Popup меню для маленьких екранів
+@media (max-width: 420px) {
+  .menu--active .popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    transition: all 0.3s ease-in;
+
+    // Адаптивний шрифт для popup
+    @include responsive-font-size(1rem, 2, 1.8);
+  }
+}

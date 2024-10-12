@@ -38,6 +38,21 @@
       </div>
     </header>
 
+    <div class="menu">  
+      <div class="menu__container">
+        <ion-icon name="menu-outline" class="menu-icon menu-icon--open" onclick="openMenu()"></ion-icon>
+        <ion-icon name="close-outline" class="menu-icon menu-icon--close" onclick="closeMenu()"></ion-icon>
+      </div>
+      <nav class="menu__nav">
+        <ul class="menu__list popup">
+          <li class="menu__item"><a href="index.html">Gallery</a></li>
+          <li class="menu__item"><a href="pricing.html">Pricing</a></li>
+          <li class="menu__item"><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+
     <main class="main main--contact">
       <section class="contact-section">
         <h2 class="contact-section__title">We're Here for You</h2>
@@ -98,5 +113,6 @@
     </footer>
     
     <script src="script.js"></script>
+    <script src="/js/popup.js"></script>
   </body>
 </html>
