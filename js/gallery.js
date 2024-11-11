@@ -1,4 +1,3 @@
-const refreshGalleryIcon = document.getElementById("refresh-gallery");
 const categorySelect = document.getElementById("category-select");
 const tagSelect = document.getElementById("tag-select");
 const galleryPhotosContainer = document.querySelector(
@@ -46,8 +45,5 @@ categorySelect.addEventListener("change", () => {
   fetchGalleryData(categorySelect.value, tagSelect.value);
 });
 tagSelect.addEventListener("change", () => {
-  fetchGalleryData(categorySelect.value, tagSelect.value);
-});
-refreshGalleryIcon.addEventListener("click", () => {
   fetchGalleryData(categorySelect.value, tagSelect.value);
 });
