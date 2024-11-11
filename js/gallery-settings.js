@@ -3,19 +3,17 @@ async function loadGallerySettings() {
     const response = await fetch("http://localhost:3000/gallerySettings");
 
     if (!response.ok) {
-      throw new Error(`HTTP ошибка! Статус: ${response.status}`);
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
     const settings = await response.json();
-    console.log("Настройки галереи:", settings);
+    console.log("Gallery Settings :", settings);
 
     const categorySelect = document.getElementById("category-select");
     const tagSelect = document.getElementById("tag-select");
 
     if (!categorySelect || !tagSelect) {
-      throw new Error(
-        "Элементы select для категорий и тегов не найдены в HTML."
-      );
+      throw new Error("Element select for cateroy is not found in HTML.");
     }
 
     categorySelect.innerHTML = "";
@@ -35,7 +33,7 @@ async function loadGallerySettings() {
       tagSelect.appendChild(option);
     });
   } catch (error) {
-    console.error("Ошибка загрузки настроек галереи:", error);
+    console.error("Error loading settings:", error);
   }
 }
 
