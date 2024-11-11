@@ -1,77 +1,34 @@
-// Получаем элементы
-const refreshGalleryIcon = document.getElementById("refresh-gallery"); // Иконка обновления
-const categorySelect = document.getElementById("category-select"); // Селектор категорий
-const tagSelect = document.getElementById("tag-select"); // Селектор тегов
+const refreshGalleryIcon = document.getElementById("refresh-gallery");
+const categorySelect = document.getElementById("category-select");
+const tagSelect = document.getElementById("tag-select");
 const galleryPhotosContainer = document.querySelector(
   ".recent-gallery__photos"
-); // Контейнер для галереи
+);
 
-// Пример данных изображений для каждой категории и тега
-const galleryData = {
-  wedding: {
-    blacknwhite: [
-      "/photos/index/wedding-blacknwhite/img-1.png",
-      "/photos/index/wedding-blacknwhite/img-2.png",
-      "/photos/index/wedding-blacknwhite/img-3.png",
-      "/photos/index/wedding-blacknwhite/img-4.png",
-      "/photos/index/wedding-blacknwhite/img-5.png",
-      "/photos/index/wedding-blacknwhite/img-6.png",
-      "/photos/index/wedding-blacknwhite/img-7.png",
-      "/photos/index/wedding-blacknwhite/img-8.png",
-      "/photos/index/wedding-blacknwhite/img-9.png",
-    ],
-    colorful: [
-      "/photos/index/wedding-color/img-1.png",
-      "/photos/index/wedding-color/img-2.png",
-      "/photos/index/wedding-color/img-3.png",
-      "/photos/index/wedding-color/img-4.png",
-      "/photos/index/wedding-color/img-5.png",
-      "/photos/index/wedding-color/img-6.png",
-      "/photos/index/wedding-color/img-7.png",
-      "/photos/index/wedding-color/img-8.png",
-      "/photos/index/wedding-color/img-9.png",
-    ],
-  },
-  landscape: {
-    // Заменено с portrait на landscape
-    blacknwhite: [
-      "/photos/index/landscape-blacknwhite/img-1.png",
-      "/photos/index/landscape-blacknwhite/img-2.png",
-      "/photos/index/landscape-blacknwhite/img-3.png",
-      "/photos/index/landscape-blacknwhite/img-4.png",
-      "/photos/index/landscape-blacknwhite/img-5.png",
-      "/photos/index/landscape-blacknwhite/img-6.png",
-      "/photos/index/landscape-blacknwhite/img-7.png",
-      "/photos/index/landscape-blacknwhite/img-8.png",
-      "/photos/index/landscape-blacknwhite/img-9.png",
-    ],
-    colorful: [
-      "/photos/index/landscape-color/img-1.png",
-      "/photos/index/landscape-color/img-2.png",
-      "/photos/index/landscape-color/img-3.png",
-      "/photos/index/landscape-color/img-4.png",
-      "/photos/index/landscape-color/img-5.png",
-      "/photos/index/landscape-color/img-6.png",
-      "/photos/index/landscape-color/img-7.png",
-      "/photos/index/landscape-color/img-8.png",
-      "/photos/index/landscape-color/img-9.png",
-    ],
-  },
-};
+async function fetchGalleryData(category, tag) {
+  try {
+    const response = await fetch("http://localhost:3000/albums");
+    const data = await response.json();
 
-// Функция обновления галереи
-function updateGallery() {
-  const selectedCategory = categorySelect.value; // Получаем выбранную категорию
-  const selectedTag = tagSelect.value; // Получаем выбранный тег
+    console.log("Fetched data:", data);
 
-  // Получаем массив изображений для выбранной категории и тега
-  const selectedPhotos = galleryData[selectedCategory][selectedTag];
+    const album = data.find((item) => item.category === category);
+    if (!album || !album.tags[tag]) {
+      galleryPhotosContainer.innerHTML =
+        "<p>No photos available for this selection.</p>";
+      return;
+    }
 
-  // Очищаем контейнер галереи
+    const photos = album.tags[tag].map((photo) => photo.url);
+    displayPhotos(photos);
+  } catch (error) {
+    console.error("Error fetching gallery data:", error);
+  }
+}
+
+function displayPhotos(photos) {
   galleryPhotosContainer.innerHTML = "";
-
-  // Добавляем новые фотографии
-  selectedPhotos.forEach((photoSrc) => {
+  photos.forEach((photoSrc) => {
     const photoItem = document.createElement("div");
     photoItem.classList.add("photo-item");
 
@@ -85,6 +42,12 @@ function updateGallery() {
   });
 }
 
-// Добавляем обработчики изменений для селекторов
-categorySelect.addEventListener("change", updateGallery);
-tagSelect.addEventListener("change", updateGallery);
+categorySelect.addEventListener("change", () => {
+  fetchGalleryData(categorySelect.value, tagSelect.value);
+});
+tagSelect.addEventListener("change", () => {
+  fetchGalleryData(categorySelect.value, tagSelect.value);
+});
+refreshGalleryIcon.addEventListener("click", () => {
+  fetchGalleryData(categorySelect.value, tagSelect.value);
+});

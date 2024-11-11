@@ -1,0 +1,60 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "category": "wedding",
+      "tags": {
+        "blacknwhite": [
+          { "id": 101, "url": "/photos/index/wedding-blacknwhite/img-1.png" },
+          { "id": 102, "url": "/photos/index/wedding-blacknwhite/img-2.png" },
+          { "id": 103, "url": "/photos/index/wedding-blacknwhite/img-3.png" },
+          { "id": 104, "url": "/photos/index/wedding-blacknwhite/img-4.png" },
+          { "id": 105, "url": "/photos/index/wedding-blacknwhite/img-5.png" },
+          { "id": 106, "url": "/photos/index/wedding-blacknwhite/img-6.png" },
+          { "id": 107, "url": "/photos/index/wedding-blacknwhite/img-7.png" },
+          { "id": 108, "url": "/photos/index/wedding-blacknwhite/img-8.png" },
+          { "id": 109, "url": "/photos/index/wedding-blacknwhite/img-9.png" }
+        ],
+        "colorful": [
+          { "id": 201, "url": "/photos/index/wedding-color/img-1.png" },
+          { "id": 202, "url": "/photos/index/wedding-color/img-2.png" },
+          { "id": 203, "url": "/photos/index/wedding-color/img-3.png" },
+          { "id": 204, "url": "/photos/index/wedding-color/img-4.png" },
+          { "id": 205, "url": "/photos/index/wedding-color/img-5.png" },
+          { "id": 206, "url": "/photos/index/wedding-color/img-6.png" },
+          { "id": 207, "url": "/photos/index/wedding-color/img-7.png" },
+          { "id": 208, "url": "/photos/index/wedding-color/img-8.png" },
+          { "id": 209, "url": "/photos/index/wedding-color/img-9.png" }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "category": "landscape",
+      "tags": {
+        "blacknwhite": [
+          { "id": 301, "url": "/photos/index/landscape-blacknwhite/img-1.png" },
+          { "id": 302, "url": "/photos/index/landscape-blacknwhite/img-2.png" },
+          { "id": 303, "url": "/photos/index/landscape-blacknwhite/img-3.png" },
+          { "id": 304, "url": "/photos/index/landscape-blacknwhite/img-4.png" },
+          { "id": 305, "url": "/photos/index/landscape-blacknwhite/img-5.png" },
+          { "id": 306, "url": "/photos/index/landscape-blacknwhite/img-6.png" },
+          { "id": 307, "url": "/photos/index/landscape-blacknwhite/img-7.png" },
+          { "id": 308, "url": "/photos/index/landscape-blacknwhite/img-8.png" },
+          { "id": 309, "url": "/photos/index/landscape-blacknwhite/img-9.png" }
+        ],
+        "colorful": [
+          { "id": 401, "url": "/photos/index/landscape-color/img-1.png" },
+          { "id": 402, "url": "/photos/index/landscape-color/img-2.png" },
+          { "id": 403, "url": "/photos/index/landscape-color/img-3.png" },
+          { "id": 404, "url": "/photos/index/landscape-color/img-4.png" },
+          { "id": 405, "url": "/photos/index/landscape-color/img-5.png" },
+          { "id": 406, "url": "/photos/index/landscape-color/img-6.png" },
+          { "id": 407, "url": "/photos/index/landscape-color/img-7.png" },
+          { "id": 408, "url": "/photos/index/landscape-color/img-8.png" },
+          { "id": 409, "url": "/photos/index/landscape-color/img-9.png" }
+        ]
+      }
+    }
+  ]
+}
