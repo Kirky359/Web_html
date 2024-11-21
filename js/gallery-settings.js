@@ -13,7 +13,7 @@ async function loadGallerySettings() {
     const tagSelect = document.getElementById("tag-select");
 
     if (!categorySelect || !tagSelect) {
-      throw new Error("Element select for cateroy is not found in HTML.");
+      throw new Error("Element select for category is not found in HTML.");
     }
 
     categorySelect.innerHTML = "";
