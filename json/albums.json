@@ -1,8 +1,7 @@
 {
   "gallerySettings": {
     "categories": ["wedding", "landscape", "music"],
-    "tags": ["blacknwhite", "colorful"],
-    "updateOnFilterChange": true
+    "tags": ["blacknwhite", "colorful"]
   },
   "albums": [
     {
