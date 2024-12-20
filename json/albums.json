@@ -9,26 +9,26 @@
       "category": "wedding",
       "tags": {
         "blacknwhite": [
-          { "id": 101, "url": "/photos/index/wedding-blacknwhite/img-1.png" },
-          { "id": 102, "url": "/photos/index/wedding-blacknwhite/img-2.png" },
-          { "id": 103, "url": "/photos/index/wedding-blacknwhite/img-3.png" },
-          { "id": 104, "url": "/photos/index/wedding-blacknwhite/img-4.png" },
-          { "id": 105, "url": "/photos/index/wedding-blacknwhite/img-5.png" },
-          { "id": 106, "url": "/photos/index/wedding-blacknwhite/img-6.png" },
-          { "id": 107, "url": "/photos/index/wedding-blacknwhite/img-7.png" },
-          { "id": 108, "url": "/photos/index/wedding-blacknwhite/img-8.png" },
-          { "id": 109, "url": "/photos/index/wedding-blacknwhite/img-9.png" }
+          { "id": 101, "url": "/index/wedding-blacknwhite/img-1.png" },
+          { "id": 102, "url": "/index/wedding-blacknwhite/img-2.png" },
+          { "id": 103, "url": "/index/wedding-blacknwhite/img-3.png" },
+          { "id": 104, "url": "/index/wedding-blacknwhite/img-4.png" },
+          { "id": 105, "url": "/index/wedding-blacknwhite/img-5.png" },
+          { "id": 106, "url": "/index/wedding-blacknwhite/img-6.png" },
+          { "id": 107, "url": "/index/wedding-blacknwhite/img-7.png" },
+          { "id": 108, "url": "/index/wedding-blacknwhite/img-8.png" },
+          { "id": 109, "url": "/index/wedding-blacknwhite/img-9.png" }
         ],
         "colorful": [
-          { "id": 201, "url": "/photos/index/wedding-color/img-1.png" },
-          { "id": 202, "url": "/photos/index/wedding-color/img-2.png" },
-          { "id": 203, "url": "/photos/index/wedding-color/img-3.png" },
-          { "id": 204, "url": "/photos/index/wedding-color/img-4.png" },
-          { "id": 205, "url": "/photos/index/wedding-color/img-5.png" },
-          { "id": 206, "url": "/photos/index/wedding-color/img-6.png" },
-          { "id": 207, "url": "/photos/index/wedding-color/img-7.png" },
-          { "id": 208, "url": "/photos/index/wedding-color/img-8.png" },
-          { "id": 209, "url": "/photos/index/wedding-color/img-9.png" }
+          { "id": 201, "url": "/index/wedding-color/img-1.png" },
+          { "id": 202, "url": "/index/wedding-color/img-2.png" },
+          { "id": 203, "url": "/index/wedding-color/img-3.png" },
+          { "id": 204, "url": "/index/wedding-color/img-4.png" },
+          { "id": 205, "url": "/index/wedding-color/img-5.png" },
+          { "id": 206, "url": "/index/wedding-color/img-6.png" },
+          { "id": 207, "url": "/index/wedding-color/img-7.png" },
+          { "id": 208, "url": "/index/wedding-color/img-8.png" },
+          { "id": 209, "url": "/index/wedding-color/img-9.png" }
         ]
       }
     },
@@ -37,26 +37,26 @@
       "category": "landscape",
       "tags": {
         "blacknwhite": [
-          { "id": 301, "url": "/photos/index/landscape-blacknwhite/img-1.png" },
-          { "id": 302, "url": "/photos/index/landscape-blacknwhite/img-2.png" },
-          { "id": 303, "url": "/photos/index/landscape-blacknwhite/img-3.png" },
-          { "id": 304, "url": "/photos/index/landscape-blacknwhite/img-4.png" },
-          { "id": 305, "url": "/photos/index/landscape-blacknwhite/img-5.png" },
-          { "id": 306, "url": "/photos/index/landscape-blacknwhite/img-6.png" },
-          { "id": 307, "url": "/photos/index/landscape-blacknwhite/img-7.png" },
-          { "id": 308, "url": "/photos/index/landscape-blacknwhite/img-8.png" },
-          { "id": 309, "url": "/photos/index/landscape-blacknwhite/img-9.png" }
+          { "id": 301, "url": "/index/landscape-blacknwhite/img-1.png" },
+          { "id": 302, "url": "/index/landscape-blacknwhite/img-2.png" },
+          { "id": 303, "url": "/index/landscape-blacknwhite/img-3.png" },
+          { "id": 304, "url": "/index/landscape-blacknwhite/img-4.png" },
+          { "id": 305, "url": "/index/landscape-blacknwhite/img-5.png" },
+          { "id": 306, "url": "/index/landscape-blacknwhite/img-6.png" },
+          { "id": 307, "url": "/index/landscape-blacknwhite/img-7.png" },
+          { "id": 308, "url": "/index/landscape-blacknwhite/img-8.png" },
+          { "id": 309, "url": "/index/landscape-blacknwhite/img-9.png" }
         ],
         "colorful": [
-          { "id": 401, "url": "/photos/index/landscape-color/img-1.png" },
-          { "id": 402, "url": "/photos/index/landscape-color/img-2.png" },
-          { "id": 403, "url": "/photos/index/landscape-color/img-3.png" },
-          { "id": 404, "url": "/photos/index/landscape-color/img-4.png" },
-          { "id": 405, "url": "/photos/index/landscape-color/img-5.png" },
-          { "id": 406, "url": "/photos/index/landscape-color/img-6.png" },
-          { "id": 407, "url": "/photos/index/landscape-color/img-7.png" },
-          { "id": 408, "url": "/photos/index/landscape-color/img-8.png" },
-          { "id": 409, "url": "/photos/index/landscape-color/img-9.png" }
+          { "id": 401, "url": "/index/landscape-color/img-1.png" },
+          { "id": 402, "url": "/index/landscape-color/img-2.png" },
+          { "id": 403, "url": "/index/landscape-color/img-3.png" },
+          { "id": 404, "url": "/index/landscape-color/img-4.png" },
+          { "id": 405, "url": "/index/landscape-color/img-5.png" },
+          { "id": 406, "url": "/index/landscape-color/img-6.png" },
+          { "id": 407, "url": "/index/landscape-color/img-7.png" },
+          { "id": 408, "url": "/index/landscape-color/img-8.png" },
+          { "id": 409, "url": "/index/landscape-color/img-9.png" }
         ]
       }
     },
@@ -65,26 +65,26 @@
       "category": "music",
       "tags": {
         "blacknwhite": [
-          { "id": 501, "url": "/photos/index/music-blacknwhite/img-1.png" },
-          { "id": 502, "url": "/photos/index/music-blacknwhite/img-2.png" },
-          { "id": 503, "url": "/photos/index/music-blacknwhite/img-3.png" },
-          { "id": 504, "url": "/photos/index/music-blacknwhite/img-4.png" },
-          { "id": 505, "url": "/photos/index/music-blacknwhite/img-5.png" },
-          { "id": 506, "url": "/photos/index/music-blacknwhite/img-6.png" },
-          { "id": 507, "url": "/photos/index/music-blacknwhite/img-7.png" },
-          { "id": 508, "url": "/photos/index/music-blacknwhite/img-8.png" },
-          { "id": 509, "url": "/photos/index/music-blacknwhite/img-9.png" }
+          { "id": 501, "url": "/index/music-blacknwhite/img-1.png" },
+          { "id": 502, "url": "/index/music-blacknwhite/img-2.png" },
+          { "id": 503, "url": "/index/music-blacknwhite/img-3.png" },
+          { "id": 504, "url": "/index/music-blacknwhite/img-4.png" },
+          { "id": 505, "url": "/index/music-blacknwhite/img-5.png" },
+          { "id": 506, "url": "/index/music-blacknwhite/img-6.png" },
+          { "id": 507, "url": "/index/music-blacknwhite/img-7.png" },
+          { "id": 508, "url": "/index/music-blacknwhite/img-8.png" },
+          { "id": 509, "url": "/index/music-blacknwhite/img-9.png" }
         ],
         "colorful": [
-          { "id": 601, "url": "/photos/index/music-color/img-1.png" },
-          { "id": 602, "url": "/photos/index/music-color/img-2.png" },
-          { "id": 603, "url": "/photos/index/music-color/img-3.png" },
-          { "id": 604, "url": "/photos/index/music-color/img-4.png" },
-          { "id": 605, "url": "/photos/index/music-color/img-5.png" },
-          { "id": 606, "url": "/photos/index/music-color/img-6.png" },
-          { "id": 607, "url": "/photos/index/music-color/img-7.png" },
-          { "id": 608, "url": "/photos/index/music-color/img-8.png" },
-          { "id": 609, "url": "/photos/index/music-color/img-9.png" }
+          { "id": 601, "url": "/index/music-color/img-1.png" },
+          { "id": 602, "url": "/index/music-color/img-2.png" },
+          { "id": 603, "url": "/index/music-color/img-3.png" },
+          { "id": 604, "url": "/index/music-color/img-4.png" },
+          { "id": 605, "url": "/index/music-color/img-5.png" },
+          { "id": 606, "url": "/index/music-color/img-6.png" },
+          { "id": 607, "url": "/index/music-color/img-7.png" },
+          { "id": 608, "url": "/index/music-color/img-8.png" },
+          { "id": 609, "url": "/index/music-color/img-9.png" }
         ]
       }
     }

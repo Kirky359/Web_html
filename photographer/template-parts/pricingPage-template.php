@@ -1,60 +1,21 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhotoScape - Pricing</title>
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/pricing.css" />
-    <link rel="stylesheet" href="/css/querries.css" /> 
-   
-    <link rel="icon" href="photos/logo.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+<?php
+/**
+ * Template Name: PricingPage
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package photographer
+ */
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  
+get_header(); 
+?>
 
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__logo-container">
-          <img src="photos/logo.png" alt="PhotoScape logo" class="header__logo" />
-          <span class="header__logo-text">PhotoScape</span>
-        </div>
-    
-        <ul class="menu__list">
-          <li class="menu__item"><a href="index.html">Gallery</a></li>
-          <li class="menu__item"><a href="pricing.html">Pricing</a></li>
-          <li class="menu__item"><a href="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <div class="menu">  
-      <div class="menu__container">
-        <ion-icon name="menu-outline" class="menu-icon menu-icon--open" onclick="openMenu()"></ion-icon>
-        <ion-icon name="close-outline" class="menu-icon menu-icon--close" onclick="closeMenu()"></ion-icon>
-      </div>
-      <nav class="menu__nav">
-        <ul class="menu__list popup">
-          <li class="menu__item"><a href="index.html">Gallery</a></li>
-          <li class="menu__item"><a href="pricing.html">Pricing</a></li>
-          <li class="menu__item"><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
-    </div>
-    
-
-    <main class="main main--pricing">
+<main class="main main--pricing">
       <section class="pricing-section">
         <div class="pricing-plan pricing-plan--basic">
           <h2 class="pricing-plan__title">Basic</h2>
@@ -68,8 +29,8 @@
               Designed digital album
             </li>
           </ul>
-          <button class="button button--buy" data-package="premium">
-            Buy Premium Pack
+          <button class="button button--buy" data-package="basic">
+            Buy Basic Pack
           </button>
           
         </div>
@@ -129,29 +90,14 @@
         </form>
       </section>
       <div class="overlay"></div>
-        
+      
+      
       <div class="overlay"></div>
       
     </main>
 
-    <footer class="footer">
-      <div class="footer__social-links">
-        <a href="#" class="footer__link">
-          <ion-icon class="footer__icon" name="logo-pinterest"></ion-icon>
-        </a>
-        <a href="#" class="footer__link">
-          <ion-icon class="footer__icon" name="logo-facebook"></ion-icon>
-        </a>
-        <a href="#" class="footer__link">
-          <ion-icon class="footer__icon" name="logo-instagram"></ion-icon>
-        </a>
-      </div>
-      <p>© 2024 by Photoscape Photography.</p>
-      <address>01001 New York, Park line 23, New York, NYC</address>
-    </footer>
-    
-    
-    <script src="/js/pricing.js"></script>
-    <script src="/js/popup.js"></script>
-  </body>
-</html>
+
+      <?php get_footer(); 
+?>
+
+
