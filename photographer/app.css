@@ -1,8 +1,6 @@
 /*
 Theme Name: Photographer
 Theme URI: http://example.com/photographer
-Author: Ваше имя
-Description: Тема для фотогалереи.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -679,7 +677,6 @@ footer address, footer p {
 /* /////////////////////////// */
 
 
-/* Стили для иконок открытия и закрытия меню */
 .menu-icon {
   font-size: 3rem;
   cursor: pointer;
@@ -687,12 +684,11 @@ footer address, footer p {
   top: 2rem;
   right: 2rem;
   z-index: 1001;
-  display: none; /* Изначально скрываем */
+  display: none; 
   margin: 2.4rem 1.5rem 0rem 3rem;
   color: #555;
 }
 
-/* По умолчанию скрываем popup меню */
 .popup {
   display: none;
 }
@@ -709,10 +705,10 @@ footer address, footer p {
   }
 
   .gallery-image {
-    width: 80%; /* Уменьшаем ширину всех изображений */
-    object-fit: cover; /* Пропорционально масштабируем изображения, обрезая края */
-    margin: 0.5rem; /* Добавляем отступы вокруг каждого изображения */
-    border-radius: 0.5rem; /* Края для визуальной гармонии */
+    width: 80%; 
+    object-fit: cover; 
+    margin: 0.5rem;
+    border-radius: 0.5rem; 
   }
 
   .gallery-images {
@@ -829,26 +825,25 @@ footer address, footer p {
   }
 
   .pricing-plan {
-    width: 100%; /* Увеличение ширины элементов до 100% */
-    max-width: 35rem; /* Ограничение максимальной ширины */
-    margin-bottom: 2rem; /* Добавление отступа между карточками */
+    width: 100%; 
+    max-width: 35rem; 
+    margin-bottom: 2rem; 
   }
 }
 
 
-/* Для экранов меньше 490px */
 @media (max-width: 490px) {
   html {
-    font-size: 10px; /* Уменьшаем базовый размер шрифта (по умолчанию 1rem = 16px) */
+    font-size: 10px;
   }
   
   .header__container {
-    padding: 0 1rem; /* Добавим немного отступов по бокам */
+    padding: 0 1rem; 
   }
 
   .header__logo {
-    width: 2rem; /* Уменьшаем ширину логотипа */
-    height: auto; /* Высота автоматически подстраивается */
+    width: 2rem; 
+    height: auto;
   }
 
   .menu-icon {
@@ -856,7 +851,6 @@ footer address, footer p {
     top:1.2rem;
   }
 
-  /* Скрываем обычный массив меню для экранов меньше 490px */
   header .menu__list {
     display: none;
   }
@@ -881,7 +875,6 @@ footer address, footer p {
     transition: all 0.3s ease-in;
   }
 
-  /* Изменение размера логотипа */
   .header__logo {
     width: 2rem;
     height: auto;
@@ -891,7 +884,6 @@ footer address, footer p {
     font-size: 2rem;
   }
 
-  /* Скрываем обычный массив меню для экранов меньше 490px */
   header .menu__list {
     display: none;
   }
@@ -905,12 +897,12 @@ footer address, footer p {
 
   .pricing-section {
     flex-direction: column;
-    align-items: center; /* Выравнивание по центру для визуальной гармонии */
+    align-items: center; 
   }
 
   .pricing-plan {
-    width: 100%; /* Увеличение ширины элементов до 100% */
-    max-width: 25rem; /* Ограничение максимальной ширины */
-    margin-bottom: 2rem; /* Добавление отступа между карточками */
+    width: 100%; 
+    max-width: 25rem; 
+    margin-bottom: 2rem; 
   }
 }
